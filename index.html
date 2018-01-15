@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+</head>
+
+<body ng-app="Teste">
+    <div class="container"  ng-controller="testeController">
+
+        <div class="container-options" >
+
+            <div class="options" ng-class="{ativo: isAtivo(opcao)}" ng-repeat="opcao in opcoes" ng-click="setIndice($index); select(opcao)">
+                {{opcao}}
+            </div>
+        </div>
+            <div class="container-resultado">
+
+                <div class="resultado" ng-show="indice == 0">A</div>
+                <div class="resultado" ng-show="indice == 1">B</div>
+                <div class="resultado" ng-show="indice == 2">C</div>
+                <div class="resultado" ng-show="indice == 3">D</div>
+
+            </div>
+
+        
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

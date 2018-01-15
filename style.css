@@ -1,0 +1,28 @@
+.options {
+    border: 1px solid black;
+    width: 300px;
+    height: 30px;
+    background-color: aqua;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.options.ativo {
+    background-color: blue;
+    color: white;
+    border: 1px solid white;
+}
+
+.container {
+    width: 100%;
+}
+
+.container-options {
+    text-align: center;
+}
+
+.resultado {
+    text-align: center;
+}
